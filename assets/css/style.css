@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+/* ---------------                     ------------Colours */
+
+body {
+    background-color: rgb(238, 228, 211);
+}
+
+/* ---------------                     ------------Header */
+
+#logo {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(84, 89, 94);
+    float: left;
+    padding-left: 2%;
+}
+
+#nav-menu {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    float: right;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    float:left;
+    padding: 10px 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(84, 89, 94);
+  }
+
+#logo:hover {
+    color: rgb(231, 78, 61);
+} 
+
+#nav-menu a:hover {
+    font-size: 110%;
+    color: rgb(231, 78, 61);
+}
+
+header {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+/* ---------------                     ------------Hero Image and Callout */
+
+.hero-container {
+    clear:both;
+}
+
+.hero-image {
+    height: 650px;
+    width: 100%;
+    background-image: url(../images/farm-hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment:scroll;
+}
