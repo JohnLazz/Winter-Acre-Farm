@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Fuzzy+Bubbles:wght@400;700&display=swap');
 
-/* ---------------                     ------------Colours */
+/* ---------------                     ------------General Rules */
 
 body {
     background-color: rgb(238, 228, 211);
+    font-family: 'Fuzzy Bubbles', cursive;
+    color:rgb(84, 89, 94);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.center-align {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(51, 153, 221);
+}
+
+span {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+    font-size: 80%;
 }
 
 /* ---------------                     ------------Header */
@@ -42,32 +61,117 @@ header ul li a {
   }
 
 #logo:hover {
-    color: rgb(231, 78, 61);
+    color: rgb(51, 153, 221);
 } 
 
 #nav-menu a:hover {
     font-size: 110%;
-    color: rgb(231, 78, 61);
+    color: rgb(51, 153, 221);
 }
 
 header {
     margin-top: 5px;
     margin-bottom: 5px;
-
 }
 
 /* ---------------                     ------------Hero Image and Callout */
 
 .hero-container {
+    height: 700px;
+    width: 100%;
     clear:both;
+    position: relative;
+    
 }
 
 .hero-image {
-    height: 650px;
+    height: 700px;
     width: 100%;
     background-image: url(../images/farm-hero-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom center;
+}
+
+.callout {
+    height: 200px;
+    width: 350px;
+    background-color: rgba(84, 89, 94, 0.5);
+    position: absolute;
+    top: 350px;
+    right: 20%;
+    border-radius: 5%;
+    padding: 60px 20px 20px 20px;
+    margin-right: 50px;
+
+    color: rgb(238, 228, 211);
+    text-transform: uppercase;
+    font-size: 230%;
+}
+
+/* ---------------                     ------------Animals Container */
+
+.animals-container {
+    height: 500px;
+    margin: 10px 10px;
+    clear:both;
+}
+
+.animals-text {
+    width: 35%;
+    float:right; 
+    
+}
+
+.animals-image {
+    height: 500px;
+    width: 60%;
+    background-image: url(../images/feeding-animals.jpg);
+    background-size: cover;
     background-position: center center;
-    background-attachment:scroll;
+    float:left; 
+}
+
+/* ---------------                     ------------Produce Container */
+
+.produce-container {
+    height: 500px;
+    margin: 10px 10px;
+    clear:both;
+}
+
+.produce-text {
+    width: 35%;
+    float: left;
+}
+
+.produce-image {
+    height: 500px;
+    width: 60%;
+    background-image: url(../images/fruit-shop.jpg);
+    background-size: cover;
+    background-position: center center;
+    float:right; 
+}
+
+/* ---------------                     ------------Hire Container */
+
+.hire-container {
+    height: 500px;
+    margin: 10px 10px;
+    clear:both;
+}
+
+.hire-text {
+    width: 35%;
+    float:right; 
+}
+
+.hire-image {
+    height: 500px;
+    width: 60%;
+    background-image: url(../images/barn-venue.jpg);
+    background-size: cover;
+    background-position: center center;
+    float:left; 
 }
