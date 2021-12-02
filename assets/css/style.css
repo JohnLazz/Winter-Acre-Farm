@@ -10,6 +10,10 @@ body {
     margin-right: 0;
 }
 
+ul {
+    list-style: none;
+}
+
 .center-align {
     text-align: center;
 }
@@ -18,11 +22,16 @@ a {
     text-decoration: none;
     color:rgb(51, 153, 221);
 }
-
+/* span below for links within the body content */
 span {
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
     font-size: 80%;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* ---------------                     ------------Header */
@@ -40,14 +49,11 @@ span {
     font-family: 'Comfortaa', cursive;
     font-weight: 400;
     float: right;
+    margin-right: 30px;
 }
 
 header a {
     text-decoration: none;
-}
-
-header ul {
-    list-style: none;
 }
 
 header ul li {
@@ -174,4 +180,62 @@ header {
     background-size: cover;
     background-position: center center;
     float:left; 
+}
+
+/* ---------------                     ------------Find Us Container */
+
+.find-us-container {
+    height: 500px;
+    width: 90%;
+    clear:both;
+    position:relative;
+}
+
+.address-container {
+    float:left;
+    text-align: center;
+    height: 200px;
+    width:50%;
+    position: absolute;
+    top: 100px;
+    margin-left: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.map-container {
+    width: 45%;
+    float:right;
+    border: 1px solid;
+    margin-top: 40px;
+}
+
+/* ---------------                     ------------Footer */
+
+footer {
+    margin-bottom:30px;
+}
+
+.footer-text {
+    width:100%;
+}
+
+.footer-text p {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+footer ul {
+    text-align: center;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 150%;
+}
+
+footer ul li:hover {
+    font-size: 170%;
+    color: rgb(84, 89, 94);
 }
