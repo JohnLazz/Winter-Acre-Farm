@@ -30,7 +30,21 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="hire-form-container">
+        <div class="hire-bg-image"></div>
+        <div class="hire-header">
+            <h3>VENUE HIRE</h3>
+            <p>Please provide contact details and reason for hire to arrange a meeting.</p>
+        </div>
+        <form action="https://formdump.codeinstitute.net/" method="POST" target="_blank" class="hire-form">
+            <h3>Hire Form</h3>
+            <input type="text" id="name" name="name" placeholder="Name:" class="form-input" required>
+            <input type="email" id="email" name="email" placeholder="Email:" class="form-input" required>
+            <input type="text" id="phonee" name="phone" placeholder="Phone:" class="form-input" required>
+            <textarea name="reason" id="reason" cols="30" rows="10" placeholder="Reason for hire:" class="form-input" required></textarea> 
+            <button type="submit" class="submit-button">Submit</button>
+            <button type="reset" class="reset-button">Reset Form</button>
+        </form>
 
     </section>
     <footer>
