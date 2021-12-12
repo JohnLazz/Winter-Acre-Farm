@@ -309,6 +309,10 @@ table {
     display:inline;         /*display:inline to center the table horizontally*/
 }
 
+td {
+    padding-right:8px;
+}
+
 /* ---------------                                              ------------HIRE.HTML */
 
 .hire-form-container {
@@ -351,12 +355,15 @@ table {
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
-    border: 1px solid rgb(0, 0, 0);
     text-align: center;
 }
 
+form label {
+    color: black;
+}
+
 form h3 {
-    color:black
+    color:black;
 }
 
 .form-input {
@@ -386,10 +393,19 @@ form h3 {
 form button:hover {
     background-color: rgb(51, 153, 221);
 }
+
+/* ---------------                                         ------------THANKYOU.HTML */
+
+.thank-you {
+    clear:both;
+    text-align: center;
+    padding: 200px 0;
+}
+
 /* ---------------                                               ------------Footer */
 
 footer {
-    margin-bottom:30px;
+    margin:40px auto;
 }
 
 .footer-text {
@@ -477,7 +493,7 @@ footer ul li a:hover {
         width: auto;
         float: none;
         margin: 0;
-        padding: 50px;
+        padding: 0 50px 50px 50px; 
     }
 
     .hire-container {
@@ -543,6 +559,7 @@ footer ul li a:hover {
         width: 80%;   /*to fit container on small screens*/
     }
 
+ /*---------------------------HIRE*/   
     .hire-form {
         width: 80%;
     }

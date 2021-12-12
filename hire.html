@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
+    <header>                     <!--LOGO AND NAVIGATION-->
         <a href="index.html"> 
             <h1 id="logo">winter acre farm</h1>
         </a>
@@ -30,24 +30,28 @@
             </ul>
         </nav>
     </header>
-    <section class="hire-form-container">
+    <section class="hire-form-container">    <!--HIRE FORM-->
         <div class="hire-bg-image"></div>
         <div class="hire-header">
             <h3>VENUE HIRE</h3>
             <p>Please provide contact details and reason for hire to arrange a meeting.</p>
         </div>
-        <form action="https://formdump.codeinstitute.net/" method="POST" target="_blank" class="hire-form">
+        <form action="thank_you.html" method="GET" class="hire-form">
             <h3>Hire Form</h3>
-            <input type="text" id="name" name="name" placeholder="Name:" class="form-input" required>
-            <input type="email" id="email" name="email" placeholder="Email:" class="form-input" required>
-            <input type="text" id="phonee" name="phone" placeholder="Phone:" class="form-input" required>
-            <textarea name="reason" id="reason" cols="30" rows="10" placeholder="Reason for hire:" class="form-input" required></textarea> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" class="form-input" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" class="form-input" required>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone" class="form-input" required>
+            <label for="reason">Reason:</label>
+            <textarea name="reason" id="reason" cols="30" rows="10" placeholder="Reason for hire" class="form-input" required></textarea> 
             <button type="submit" class="submit-button">Submit</button>
             <button type="reset" class="reset-button">Reset Form</button>
         </form>
 
     </section>
-    <footer>
+    <footer>                         <!--FOOTER-->
         <div class="footer-text">
          <p>
              © Winter Acre Farm 2021
