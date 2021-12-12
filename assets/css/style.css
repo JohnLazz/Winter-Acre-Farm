@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Fuzzy+Bubbles:wght@400;700&display=swap');
 
-/* ---------------                     ------------General Rules */
+/* ---------------                                    ------------General Rules */
 
 body {
     background-color: rgb(253, 253, 236);
@@ -22,19 +22,20 @@ a {
     text-decoration: none;
     color:rgb(51, 153, 221);
 }
+
 /* span below for links within the body content */
 span {
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 hr {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-/* ---------------                     ------------Header */
+/* ---------------                                         ------------Header */
 
 #logo {
     font-family: 'Comfortaa', cursive;
@@ -79,8 +80,8 @@ header {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-/* ----------------                   -------------INDEX.HTML */
-/* ---------------                     ------------Hero Image and Callout */
+/* ----------------                                            -------------INDEX.HTML */
+/* ---------------                                  ------------Hero Image and Callout */
 
 .hero-container {
     height: 700px;
@@ -114,7 +115,7 @@ header {
     font-size: xx-large;
 }
 
-/* ---------------                     ------------Animals  */
+/* ---------------                                           ------------INDEX - Animals  */
 
 .animals-container {
     height: 500px;
@@ -135,10 +136,12 @@ header {
     background-size: cover;
     background-position: center center;
     float:left; 
-    margin-left:20px;
+    margin-left:25px;
+    border: 2px solid;
+    border-radius: 10px;
 }
 
-/* ---------------                     ------------Produce */
+/* ---------------                                             ------------INDEX - Produce */
 
 .produce-container {
     height: 500px;
@@ -160,10 +163,12 @@ header {
     background-size: cover;
     background-position: center center;
     float:right; 
-    margin-right:20px;
+    margin-right:25px;
+    border: 2px solid;
+    border-radius: 10px;
 }
 
-/* ---------------                     ------------Hire  */
+/* ---------------                                               ------------INDEX - Hire  */
 
 .hire-container {
     height: 500px;
@@ -184,10 +189,12 @@ header {
     background-size: cover;
     background-position: center center;
     float:left; 
-    margin-left:20px;
+    margin-left:25px;
+    border: 2px solid;
+    border-radius: 10px;
 }
 
-/* ---------------                     ------------Find Us */
+/* ---------------                                               ------------INDEX - Find Us */
 
 .find-us-container {
     height: 500px;
@@ -210,13 +217,19 @@ header {
 .map-container {
     width: 45%;
     float:right;
-    border: 1px solid;
+    border: 2px solid;
+    border-radius: 10px;
     margin-top: 40px;
-    margin-right: 30px;
+    margin-right: 60px;
+    height: 328px; /*height to match iframe*/ 
 }
 
-/* ----------------                   -------------VISIT.HTML */
-/* ---------------                     ------------Visit Container */
+iframe {
+    width:100%; /*this makes map take up 100% of the map-container*/
+    border-radius: 10px;
+}
+
+/* ----------------                                              -------------VISIT.HTML */
 
 .visit-container {
     height: 700px;
@@ -293,10 +306,10 @@ header {
 }
 
 table {
-    display:inline;         /*this line of code used to center the table horizontally*/
+    display:inline;         /*display:inline to center the table horizontally*/
 }
 
-/* ---------------                     ------------HIRE.HTML */
+/* ---------------                                              ------------HIRE.HTML */
 
 .hire-form-container {
     height: 700px;
@@ -373,7 +386,7 @@ form h3 {
 form button:hover {
     background-color: rgb(51, 153, 221);
 }
-/* ---------------                     ------------Footer */
+/* ---------------                                               ------------Footer */
 
 footer {
     margin-bottom:30px;
@@ -404,4 +417,137 @@ footer ul li a:hover {
     color: rgb(84, 89, 94);
 }
 
+/* ---------------                                               ------------Media Queries */
 
+@media screen and (max-width:800px) {
+   
+/*----------------------------HEADER*/
+    #logo {
+        padding-left: 15px;
+        padding-right: 12px;
+    }
+
+    #nav-menu {
+        float:left;
+        padding: inherit;
+    }
+
+    #nav-menu a:hover {
+        font-size:100%;
+    }
+
+/*---------------------------INDEX*/
+    .callout {
+        right: auto;
+        padding: 0 0 50px 0;
+        margin-right: 0;
+        margin-left: 2%;
+    }
+    
+    .animals-container {
+        height: auto;
+        margin: 0;
+    }
+
+    .animals-image {
+        width: 99%;
+        margin: 0;
+        float:none;
+    }
+
+    .animals-text {
+        width: auto;
+        float: none;
+        margin: 0;
+        padding: 50px;
+    }
+
+    .produce-container {
+        height: auto;
+        margin: 0;
+    }
+
+    .produce-image {
+        width: 99%;
+        margin: 0;
+        float:none;
+    }
+
+    .produce-text {
+        width: auto;
+        float: none;
+        margin: 0;
+        padding: 50px;
+    }
+
+    .hire-container {
+        height: auto;
+        margin: 0;
+    }
+
+    .hire-image {
+        width: 99%;
+        margin: 0;
+        float:none;
+    }
+
+    .hire-text {
+        width: auto;
+        float: none;
+        margin: 0;
+        padding: 50px;
+    }
+
+    .find-us-container {
+        height: auto;
+        margin: 0;
+    }
+
+    .address-container {
+        float: none;
+        width: 100%;
+        margin: 40px 0 0 0;
+        position: static;
+    }
+
+    .map-container {
+        float: none;
+        width:80%;
+        margin: 0 auto;
+    }
+
+/*---------------------------VISIT*/
+    .book-in {
+        top:10px;
+        right: 0;
+    }
+
+    .walk-in {
+        top: 230px;
+        left: 0;
+    }
+
+    .contact-details {
+        top: 450px;
+        color:black; /*the vertical position change of the div requires the text to change colour to be readable against the img background*/
+    }
+
+    .opening-times {
+        top: 570px;
+        color: black; /*the vertical position change of the div requires the text to change colour to be readable against the img background*/
+    }
+}
+
+@media screen and (max-width:500px) {
+    .contact-details {
+        width: 80%;   /*to fit container on small screens*/
+    }
+
+    .hire-form {
+        width: 80%;
+    }
+
+    .form-input {
+        width: 80%;
+    }
+}
