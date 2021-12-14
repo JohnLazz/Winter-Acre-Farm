@@ -27,7 +27,10 @@ a {
 span {
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
-    font-size: 90%;
+}
+
+span a {
+    color:rgb(16, 34, 202) !important;
 }
 
 hr {
@@ -225,7 +228,7 @@ header {
 }
 
 iframe {
-    width:100%; /*this makes map take up 100% of the map-container*/
+    width:100%; /*this makes map take up 100% of the map-container width*/
     border-radius: 10px;
 }
 
@@ -565,6 +568,6 @@ footer ul li a:hover {
     }
 
     .form-input {
-        width: 80%;
+        width: 80%; /*these two rules to fit the hire form onto smaller viewports*/
     }
 }
